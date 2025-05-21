@@ -1,0 +1,125 @@
+:root {
+    --color-primary-light: #8347e5;
+    --color-primary-main: #6c2bd9;
+    --color-primary-dark: #5a23b5;
+    --color-background: #0a0a1a;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a0aec0;
+    --color-surface: rgba(26, 26, 46, 0.4);
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-card-bg: #1a1a2a;
+    --color-input-bg: #1a1a2a;
+    --color-input-text: #ffffff;
+    --color-input-border: #2d3748;
+    --color-input-focus: #6c2bd9;
+    --color-section-bg: #111122;
+    --color-heading: #ffffff;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+.nav-glass {
+    background: var(--color-surface);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.nav-link {
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary-light);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.theme-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+}
+
+.theme-text-primary {
+    color: var(--color-text-primary);
+}
+
+.theme-text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.theme-bg-primary {
+    background-color: var(--color-primary-main);
+}
+
+.theme-gradient {
+    background: linear-gradient(135deg, var(--color-primary-main), var(--color-primary-dark));
+}
+
+.theme-section {
+    background-color: var(--color-section-bg);
+}
+
+.theme-heading {
+    color: var(--color-heading);
+}
+
+/* Form Styles */
+input, select, textarea {
+    background-color: var(--color-input-bg) !important;
+    border-color: var(--color-input-border) !important;
+    color: var(--color-input-text) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-input-focus) !important;
+    ring-color: var(--color-input-focus) !important;
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: var(--color-card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(108, 43, 217, 0.2);
+}
+
+/* Portfolio Card Styles */
+.portfolio-card {
+    background-color: var(--color-card-bg);
+}
+
+/* Navigation Text */
+.nav-text {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-text:hover {
+    color: var(--color-primary-light);
+    text-shadow: 0 0 15px var(--color-primary-light);
+}
