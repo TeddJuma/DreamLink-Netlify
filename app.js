@@ -7,14 +7,11 @@ function App() {
                     <Router />
                 </main>
                 <Footer />
+                <FloatingContact />
             </div>
         </ThemeProvider>
     );
 }
 
-try {
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(React.createElement(App));
-} catch (error) {
-    reportError(error);
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(App));

@@ -11,12 +11,14 @@ function Portfolio() {
             <section className="py-20">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="https://google.com" className="text-blue-600 hover: text-blue-800">
                         <PortfolioCard 
                             image="https://picsum.photos/800/600"
                             title="E-Commerce Platform"
                             description="A modern e-commerce solution with advanced features and seamless user experience."
                             tags={["React", "Node.js", "MongoDB"]}
                         />
+                        </a>
                         <PortfolioCard 
                             image="https://picsum.photos/801/600"
                             title="Healthcare App"
