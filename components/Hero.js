@@ -20,13 +20,13 @@ function Hero() {
                     
                     <div data-name="hero-image" className="floating">
                         <div className="relative">
-                        <div className="w-full h-96 bg-blue-600 rounded-lg opacity-40 absolute transform -rotate-3"> </div>
-                            <div className="w-full h-96 bg-blue-600 rounded-lg opacity-40 absolute transform rotate-3"></div>
+                        <div className="w-full h-80 bg-blue-600 rounded-lg opacity-40 absolute transform -rotate-3"> </div>
+                            <div className="w-full h-80 bg-blue-600 rounded-lg opacity-40 absolute transform rotate-3"></div>
 
-                            <div className="w-full h-96 bg-white rounded-lg relative">
+                            <div className="w-full h-65 bg-white rounded-lg relative">
                                 <div className="p-8">
-                                    <img src="https://www.clcmn.edu/wp-content/uploads/2019/06/techsupport.jpg" />
-                                    <div className="w-full h-full bg-gray-300 rounded-lg"></div>
+                                    <img src="images\logo - tp bg.png"  />
+                                    {/* <div className="w-full h-full bg-gray-300 rounded-lg"></div> */}
                                 </div>
                             </div>
                         </div>
