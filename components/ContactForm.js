@@ -131,8 +131,7 @@ function ContactForm() {
 
             <button
                 type="submit"
-                className="w-full theme-bg-primary text-white py-3 px-6 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2"
-            >
+                className="w-full bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2">
                 Submit Inquiry
             </button>
         </form>

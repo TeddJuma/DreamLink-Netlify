@@ -8,6 +8,7 @@ function App() {
                 </main>
                 <Footer />
                 <FloatingContact />
+                <BackToHome />
             </div>
         </ThemeProvider>
     );

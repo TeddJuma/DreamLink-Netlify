@@ -18,6 +18,7 @@ function Header() {
     const handleNavClick = () => {
         setIsOpen(false);
         setIsResourcesOpen(false);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
@@ -26,7 +27,7 @@ function Header() {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
                         <img 
-                            src="images\Test Logo gif [Into The Blue].gif" 
+                            src="images\logo - tp bg.png" 
                             alt="TechCraft Logo" 
                             className="company-logo"
                         />

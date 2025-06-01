@@ -1,5 +1,5 @@
 function ContactInfo() {
-    const phoneNumber = "+1 (555) 123-4567";
+    const phoneNumber = "+254 (0) 701 105 908";
     const emailAddress = "contact@techcraft.com";
 
     const handlePhoneClick = () => {
@@ -12,7 +12,7 @@ function ContactInfo() {
 
     return (
         <div data-name="contact-info" className="space-y-8">
-            <div className="text-center p-6 bg-gray-400 rounded-lg">
+            <div className="text-center p-6 bg-gray-200 rounded-lg">
                 <i className="fas fa-phone text-4xl text-blue-900 mb-4"></i>
                 <h3 className="text-xl font-semibold mb-2 text-black">Call Us</h3>
                 <p className="text-gray-600 mb-4">{phoneNumber}</p>
@@ -24,7 +24,7 @@ function ContactInfo() {
                 </button>
             </div>
 
-            <div className="text-center p-6 bg-gray-400 rounded-lg">
+            <div className="text-center p-6 bg-gray-200 rounded-lg">
                 <i className="fas fa-envelope text-4xl text-blue-900 mb-4"></i>
                 <h3 className="text-xl font-semibold mb-2 text-black">Email Us</h3>
                 <p className="text-gray-600 mb-4">{emailAddress}</p>

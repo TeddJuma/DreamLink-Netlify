@@ -1,4 +1,8 @@
 function Footer() {
+    const handleFooterClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <footer data-name="site-footer" className="bg-gray-900 text-white py-12">
             <div className="container mx-auto px-6">
@@ -11,17 +15,17 @@ function Footer() {
                     <div data-name="footer-links">
                         <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            <li><a href="#/" className="text-gray-400 hover:text-white">Home</a></li>
-                            <li><a href="#/services" className="text-gray-400 hover:text-white">Services</a></li>
-                            <li><a href="#/portfolio" className="text-gray-400 hover:text-white">Portfolio</a></li>
+                            <li><a href="#/" onClick={handleFooterClick} className="text-gray-400 hover:text-white">Home</a></li>
+                            <li><a href="#/services" onClick={handleFooterClick} className="text-gray-400 hover:text-white">Services</a></li>
+                            <li><a href="#/portfolio" onClick={handleFooterClick} className="text-gray-400 hover:text-white">Portfolio</a></li>
                         </ul>
                     </div>
                     
                     <div data-name="footer-legal">
                         <h4 className="text-lg font-semibold mb-4">Legal</h4>
                         <ul className="space-y-2">
-                            <li><a href="#/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                            <li><a href="#/terms" className="text-gray-400 hover:text-white">Terms of Service</a></li>
+                            <li><a href="#/privacy" onClick={handleFooterClick} className="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#/terms" onClick={handleFooterClick} className="text-gray-400 hover:text-white">Terms of Service</a></li>
                         </ul>
                     </div>
                     
@@ -35,7 +39,7 @@ function Footer() {
                 </div>
                 
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; 2024 TechCraft. All rights reserved.</p>
+                    <p>&copy; 2024 DreamLink Netlify Solutions. All rights reserved.</p>
                 </div>
             </div>
         </footer>
