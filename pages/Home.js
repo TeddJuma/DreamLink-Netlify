@@ -30,30 +30,20 @@ function Home() {
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-12 theme-heading">Featured Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <a href="https://ecommerce-demo.dreamlink.dev" className="block transition-transform hover:scale-105">
-                            <PortfolioCard 
-                                image="https://picsum.photos/800/600"
-                                title="E-Commerce Platform"
-                                description="A modern e-commerce solution with advanced features."
-                                tags={["React", "Node.js", "MongoDB"]}
-                            />
-                        </a>
-                        <a href="https://healthcare-app.dreamlink.dev" className="block transition-transform hover:scale-105">
-                            <PortfolioCard 
-                                image="https://picsum.photos/801/600"
-                                title="Healthcare App"
-                                description="Mobile application for healthcare management."
-                                tags={["React Native", "Firebase"]}
-                            />
-                        </a>
-                        <a href="https://fintech-dashboard.dreamlink.dev" className="block transition-transform hover:scale-105">
-                            <PortfolioCard 
-                                image="https://picsum.photos/802/600"
-                                title="FinTech Dashboard"
-                                description="Complex financial data visualization platform."
-                                tags={["Vue.js", "Python", "D3.js"]}
-                            />
-                        </a>
+                        {portfolioProjects.slice(0, 3).map(project => (
+                            <a 
+                                key={project.id}
+                                href={project.url} 
+                                className="block transition-transform hover:scale-105"
+                            >
+                                <PortfolioCard 
+                                    image={project.image}
+                                    title={project.title}
+                                    description={project.description}
+                                    tags={project.tags}
+                                />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </section>

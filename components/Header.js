@@ -93,7 +93,7 @@ function Header() {
                         
                         <a 
                             href="#/contact" 
-                            className="theme-bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-dark transition duration-300"
+                            className="bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-primary-dark transition duration-300"
                             onClick={handleNavClick}
                         >
                             Contact Us
